@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(0, 0, 0, 0.856);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 464px;
+    height: 826px;
+    
+    padding: 2.5%;
+}
+
+.tarjeta{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    border: solid 5px rgba(43, 36, 36, 0.842);
+    border-radius: 25px;
+}
+
+.centro{
+    width: 100%;
+    height: 65%;
+    border-top: solid 15px rgb(95, 1, 1);
+    border-bottom: solid 15px rgb(95, 1, 1);
+    background-color: rgb(167, 11, 11);
+}
+
+.avatar{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-image: url("../img/avatar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 5px rgb(95, 1, 1); 
+    border-radius: 70px;
+    top: 9%;
+    left: 34%;
+}
+
+.nombre{
+    position: absolute;
+    top: 26%;
+    left: 12%;
+}
+
+.desc{
+    position: absolute;
+    width: 260px;
+    top: 40%;
+    left: 13%;
+    font-weight: bold;
+}
+
+.stats{
+    position: absolute;
+    display: flex;
+    gap: 95%;
+    bottom: 20%;
+    left: 10%;
+}
+
+.iq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.age{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.born{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton{
+    position: absolute;
+    bottom: 6%;
+    left: 30%;
+    & button{
+        height: 35px;
+        width: 200px;
+        background-color: red;
+        border: solid 1px darkred;
+        color: rgba(0, 0, 0, 0.856);
+        font-weight: bold;
+    }
+    & button:hover{
+        border-color: red;
+        background-color: darkred;
+        color: rgba(216, 216, 216, 0.829);
+        cursor: pointer;
+    }
+}
